@@ -1,0 +1,100 @@
+
+body,ul,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset{border:0; }
+img{display:block;}
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{ font-family:"微软雅黑";}
+input,a{outline:none;}
+@font-face {
+  font-family: 'iconfont';  /* project id 1498463 */
+  src: url('//at.alicdn.com/t/font_1498463_3c1qtfeunmw.eot');
+  src: url('//at.alicdn.com/t/font_1498463_3c1qtfeunmw.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1498463_3c1qtfeunmw.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1498463_3c1qtfeunmw.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1498463_3c1qtfeunmw.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1498463_3c1qtfeunmw.svg#iconfont') format('svg');
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 1498463 */
+  src: url('//at.alicdn.com/t/font_1498463_mcf5tu3nu8.eot');
+  src: url('//at.alicdn.com/t/font_1498463_mcf5tu3nu8.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1498463_mcf5tu3nu8.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1498463_mcf5tu3nu8.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1498463_mcf5tu3nu8.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1498463_mcf5tu3nu8.svg#iconfont') format('svg');
+}
+@font-face {
+			  font-family: 'iconfont';
+			  src: url('iconfont.eot');
+			  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+			      url('iconfont.woff2') format('woff2'),
+			      url('iconfont.woff') format('woff'),
+			      url('iconfont.ttf') format('truetype'),
+			      url('iconfont.svg#iconfont') format('svg');
+			}
+			.iconfont {
+			  font-family: "iconfont" !important;
+			  font-size: 16px;
+			  font-style: normal;
+			  -webkit-font-smoothing: antialiased;
+			  -moz-osx-font-smoothing: grayscale;
+			}
+#contain{
+	margin: 0 auto;
+	background: #f6f6f6;
+}
+body,html{
+	margin: 0;
+	padding: 0;
+}
+#contain{
+	width: 1318px;
+}
+
+.header{
+	height: 30px;
+	background: #e3e4e5;
+}
+
+.next{
+	height: 115px;
+	background: #fff;
+}
+
+.nav{
+	height: 37px;
+	background: #fff;
+}
+.main{
+	height: 605px;
+	/* background: palegoldenrod; */
+	
+}
+.pic{
+	height: 352px;
+	background: lawngreen;
+	margin-top: 16px;
+}
+.content{
+	height: 10030px;
+	background: #f6f6f6;
+	margin-bottom: 250px;
+}
+.footer{
+	height: 620px;
+	background: #eaeaea;
+	margin-top: 332px;
+}
+.tong p{
+	width:218px ;
+	height:43px ;
+	line-height: 43px;
+	font-size: 25px;
+	/* background: yellow; */
+	color: red;
+}
+
+
+

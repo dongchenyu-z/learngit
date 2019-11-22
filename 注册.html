@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+
+<!-- <script src="jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script> -->
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+
+</head>
+<body>
+
+<header>
+	<a href="#" class="logo"></a>
+	<div class="desc">欢迎注册</div>
+</header>
+<section>
+	<form action="">
+		<div class="register-box">
+					<label for="username" class="username_label">用 户 名：
+			<input id="test1" maxlength="20" type="text" placeholder="您的用户名和登录名">
+					</label>
+			<div class="tips">
+						
+					</div>
+		</div>
+		<div class="register-box">
+			<label for="username" class="other_label">密 码：
+			<input id="test2" maxlength="20" type="password" placeholder="建议至少使用两种字符组合">
+			</label>
+			<div class="tips">
+				
+			</div>
+		</div>
+		<div class="register-box">
+			<label for="username" class="other_label">邮 箱：
+			<input id="test3" maxlength="20" type="email" placeholder="邮箱">
+			</label>
+			<div class="tips">
+				
+			</div>
+		</div>
+		<div class="register-box">
+			<label for="username" class="other_label">
+			<span>性别∨</span>
+			<input class="phone" id="test4" maxlength="20" type="text" placeholder="">
+			</label>
+			<div class="tips">
+				
+			</div>
+		</div>
+		
+		<div class="arguement">
+					<input type="checkbox" id="xieyi">
+			阅读并同意
+			<a href="#">《京东用户注册协议》</a>
+			<a href="#">《隐私政策》</a>
+			<div class="tips">
+				
+			</div>
+				</div>
+		<div class="submit_btn">
+					<button type="button" id="submit_btn">立 即 注 册</button>
+				</div>
+	</form>
+</section>
+
+<!-- <script src="js/index.js" type="text/javascript" charset="utf-8"></script> -->
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+
+</div>
+<script type="text/javascript">
+	$("#submit_btn").on("click",function(){
+		
+		$.ajax({
+			type:"get",
+			url:"http://47.104.244.134:8080/username.do",
+			data:{
+				username:$("#test1").val()
+			},		
+			async:true,
+			// dataType:"json",
+			success:function(data){
+				console.log(data);
+			}
+			
+		});
+		
+		$.ajax({
+			type:"get",
+			url:"http://47.104.244.134:8080/useremail.do",
+			data:{
+				email:$("#test3").val()
+			},		
+			async:true,
+			// dataType:"json",
+			success:function(data){
+				console.log(data);
+			}
+			
+		});
+		
+		
+		let data = {
+			username:$("#test1").val(),
+			password:$("#test2").val(),
+			email:$("#test3").val(),
+			sex:$("#test4").val()
+		}
+		
+		$.ajax({
+			type:"post",
+			url:"http://47.104.244.134:8080/usersave.do",
+			data:data,		
+			async:true,
+			// dataType:"json",
+			success:function(data){
+				console.log(data);
+				
+				window.location.href = "dl.html"
+				
+				
+			}
+			
+		});
+	})
+	
+	// $.ajax({
+	// 	type:"get",
+	// 	url:"http://47.104.244.134:8080/username.do",
+	// 	data:{
+	// 		username:"aaa_xfdgdfgdfgxy",
+			
+	// 	},
+	// 	async:true,
+	// 	// dataType:"json",
+	// 	success:function(data){
+	// 		console.log(data);
+	// 	}
+		
+	// })
+</script>
+</body>
+</html>
